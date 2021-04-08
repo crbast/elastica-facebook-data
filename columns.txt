@@ -1,0 +1,12 @@
+phone
+id
+Firstname
+LastName
+Sexe
+City
+Origine
+Status (marié)
+Entreprise
+Date de création
+email
+date de naissance

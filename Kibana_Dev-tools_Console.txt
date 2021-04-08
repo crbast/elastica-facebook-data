@@ -1,0 +1,72 @@
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+DELETE /facebook_swiss
+
+PUT /facebook_swiss
+{
+  "mappings": {
+    "properties": {
+      "phone": {
+        "type": "keyword"
+      },
+      "id": {
+        "type": "keyword"
+      },
+      "first_name": {
+        "type": "text"
+      },
+      "last_name": {
+        "type": "text"
+      },
+      "sexe": {
+        "type": "text"
+      },
+      "city": {
+        "type": "text"
+      },
+      "origine": {
+        "type": "text"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "professional": {
+        "type": "text"
+      },
+      "creation_date": {
+        "type": "text"
+      },
+      "email": {
+        "type": "keyword"
+      },
+      "birthday": {
+        "type": "text"
+      }
+    }
+  }
+}
+
+GET /facebook_swiss/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "fuzzy": {
+            "first_name": "Alexandre"
+          }
+        },
+        {
+          "wildcard": {
+            "city": "*Sion*"
+          }
+        }
+      ]
+    }
+  }
+}
