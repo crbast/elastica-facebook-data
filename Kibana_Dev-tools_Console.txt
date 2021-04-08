@@ -5,8 +5,10 @@ GET _search
   }
 }
 
+# Delete index
 DELETE /facebook_swiss
 
+# Create index and define columns types
 PUT /facebook_swiss
 {
   "mappings": {
@@ -51,6 +53,7 @@ PUT /facebook_swiss
   }
 }
 
+# Search query example
 GET /facebook_swiss/_search
 {
   "query": {
