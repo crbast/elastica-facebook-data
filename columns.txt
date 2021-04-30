@@ -1,12 +1,12 @@
-phone
-id
+Phone
+Id
 Firstname
 LastName
-Sexe
+Gender
 City
-Origine
-Status (marié)
-Entreprise
-Date de création
-email
-date de naissance
+Origin
+Status (married)
+Business
+Creation date
+Email
+Birthday
