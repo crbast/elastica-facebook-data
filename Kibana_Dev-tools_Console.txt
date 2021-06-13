@@ -5,7 +5,7 @@ GET _search
   }
 }
 
-# Delete index
+# Delete existing index
 DELETE /facebook_swiss
 
 # Create index and define columns types
