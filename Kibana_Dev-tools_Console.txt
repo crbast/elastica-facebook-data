@@ -61,12 +61,12 @@ GET /facebook_swiss/_search
       "must": [
         {
           "fuzzy": {
-            "first_name": "Alexandre"
+            "first_name": "Bob"
           }
         },
         {
           "wildcard": {
-            "city": "*Sion*"
+            "city": "*Madrid*"
           }
         }
       ]
